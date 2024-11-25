@@ -527,7 +527,30 @@ font-weight: bold;
   right: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.219);
-
+}
+.overlay1 p {
+  background-color: white;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 15px; 
+  font-size: 12px;
+  color: #333;
+  margin: 5px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
+}
+.overlay1:hover p {
+  opacity: 1; 
+}
+.fa-star {
+  color: #F5D227;
 }
 /* footer */
 .footer-section{
