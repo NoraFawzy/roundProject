@@ -1,3 +1,4 @@
+//explore-section
 function handleButtonClick(index) {
   const cards = document.querySelectorAll('.destination-card');
   cards.forEach((card) => {
@@ -17,7 +18,7 @@ function handleButtonClick(index) {
   buttons[index].classList.add('active');
 }
 
-
+//trips-section
 function handleScrollLeft() {
   console.log("Left button clicked!"); 
   const container = document.querySelector('.scroll-cards');
@@ -39,7 +40,7 @@ function handleScrollRight() {
   }
 }
 
-
+//animation
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".animate-left");
   const observer = new IntersectionObserver(
@@ -74,4 +75,5 @@ const observer = new IntersectionObserver((entries) => {
 const cards = document.querySelectorAll('.service-card');
 
 cards.forEach((card) => observer.observe(card));
+
 

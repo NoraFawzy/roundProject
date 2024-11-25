@@ -24,6 +24,7 @@ body {
   background-color: var(--main-color);
   color: white;
   border: none;
+  text-decoration: none;
 }
 
 .main-btn:hover {
@@ -79,6 +80,7 @@ body {
   text-decoration: none;
   margin-left: 30px;
 }
+
 .custom-toggler {
   border-color: white;
 }
@@ -142,7 +144,10 @@ body {
   padding: 3%;
   margin-right: 2%;
 }
-
+.contact i:hover{
+  background-color: var(--main-color);
+  cursor: pointer;
+}
 
 
 
@@ -704,38 +709,78 @@ body {
   .video-container {
     bottom: 0;
   }
+
   .search-container {
     width: 90%;
     /* margin-bottom: 2%; */
     bottom: -228px;
   }
+
   .explore-section {
     padding-top: 70%;
     padding-bottom: 112%;
   }
+
   .carousel-inner {
     position: relative;
     width: 100%;
     overflow: hidden;
-}
-.services-section {
-  padding-top: 543%;}
+  }
+
+  .services-section {
+    padding-top: 543%;
+  }
+
   .scroll-cards {
     width: 79%;
-    left: 25px;  
+    left: 25px;
   }
-    .scroll-btn.right-scroll {
-      right: -85px;
-      top: 109%;
-  }
-  .scroll-btn.left-scroll {
-    right: -30px;          
+
+  .scroll-btn.right-scroll {
+    right: -85px;
     top: 109%;
   }
+
+  .scroll-btn.left-scroll {
+    right: -30px;
+    top: 109%;
+  }
+
   .trip-card:hover {
     width: 210px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .services-section:hover .img-rel img {
+    transform: translateY(20px) scale(1.05);
+  }
+
+  .services-section:hover .img-abs img {
+    transform: translateX(10px) scale(1.05);
+  }
+
+  .img-rel {
+    right: -16%;
+    bottom: 24px;
+  }
+
+  .form-group button {
+    margin-top: 5%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content p {
+    margin-bottom: 10px;
+  }
 }
-}
+
 @media (min-width: 576px) and (max-width: 900px) {
   .video-container {
     position: absolute;
@@ -755,6 +800,7 @@ body {
     font-size: 12px;
     margin-left: 20px;
   }
+
   .search-container {
     width: 90%;
     margin-bottom: 2%;
@@ -763,19 +809,49 @@ body {
   .services-section {
     padding-top: 10%;
   }
-    .explore-section {
-      padding-top: 15%;
-      padding-bottom: 112%;
+
+  .explore-section {
+    padding-top: 15%;
+    padding-bottom: 112%;
   }
+
   .scroll-btn.right-scroll {
     right: -160px;
-        top: 109%;
+    top: 109%;
+  }
+
+  .scroll-btn.left-scroll {
+    right: -74px;
+    top: 109%;
+  }
+
+  .scroll-cards {
+    width: 108%;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
 }
-.scroll-btn.left-scroll {
-  right: -74px;
-        top: 109%;
-}
-.scroll-cards {
-  width: 108%;
-}
+
+@media screen and (min-width: 915px) and (max-width: 1280px) {
+  .scroll-cards {
+    width: 100%;
+  }
+
+  .video-container {
+    bottom: -145px;
+  }
+
+  .scroll-btn.right-scroll {
+    right: -225px;
+    top: 109%;
+  }
+
+  .scroll-btn.left-scroll {
+    right: -132px;
+    top: 109%;
+  }
+
 }
