@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>round</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+  <section class="hero-section  hero-vedio">
+    <div class="video-container">
+      <video autoplay loop muted playsinline class="background-video">
+        <source src="./img/hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="overlay">
+      <header class="pt-3 pb-1 overlay2" id="header">
+        <div class="container ">
+          <div class="row d-flex align-items-center header1" style="direction: ltr;">
+            <div class="col-md-8 d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-chevron-down text-white me-1"></i> <span class="text-white"> AR</span>
+                <i class="fa-solid fa-globe text-white mx-1"></i>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-end align-items-center contact">
+              <i class="fa-brands fa-snapchat text-white border p-1 rounded-circle me-1"></i>
+              <i class="fa-brands fa-tiktok text-white border p-1 rounded-circle me-1"></i>
+              <i class="fa-brands fa-instagram text-white border p-1 rounded-circle me-1"></i>
+              <i class="fa-solid fa-x text-white border p-1 rounded-circle"></i>
+            </div>
+          </div>
+          <div class="row d-flex align-items-center py-2">
+            <div class="col-md-8 d-flex align-items-center justify-content-between w-100">
+              <img src="./img/logo.png" alt="logo" style="width: 80px !important; height: 80px;">
+              <ul class="nav-list d-flex">
+                <li><a href="#Features" class="home">الرئيسية</a></li>
+                <li><a href="#">خدماتنا</a></li>
+                <li><a href="#">عن الشركة</a></li>
+                <li><a href="#">الوجهات السياحية</a></li>
+                <li><a href="#">المدونة</a></li>
+                <li><a href="#">ألبوم الصورة</a></li>
+              </ul>
+              <button class="rounded-pill py-2 px-3 main-btn"><i class="fa-regular fa-user ms-2"></i>التسجيل</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container position-relative">
+        <div class="row text-end hero-content">
+          <div class="text-white">
+            <h1 class="fw-bold heroH1">اجعل رحلتـك أكثر تحـدياً</h1>
+            <h4>اسـكتشف العديد من الرحلات و الخدمات الرائعة</h4>
+          </div>
+          <div class="col-4 text-end w-100 mt-5">
+            <button class="rounded-pill py-3 px-4 main-btn">إحجز الأن <i
+                class="fa-solid fa-arrow-left p-1"></i></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container my-5 d-flex justify-content-center">
+            <div class="search-container rounded ">
+              <div class="row align-items-center">
+                <!-- نوع الرحلة -->
+                <div class="col-md-3 ">
+                  <div class="form-group">
+                    <label class="mb-2">نوع الرحلة</label>
+                    <div class="select-wrapper">
+                      <select class="form-select rounded-pill py-3">
+                        <option selected>اختر نوع الرحلة</option>
+                        <option value="1">رحلة داخلية</option>
+                        <option value="2">رحلة خارجية</option>
+                      </select>
+                      <i class="fas fa-chevron-down"></i> 
+                    </div>
+                  </div>
+                </div>
+                <!-- الوجهات -->
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="mb-2">الوجهات</label>
+                    <div class="select-wrapper">
+                      <select class="form-select rounded-pill py-3">
+                        <option selected>اختر الوجهة</option>
+                        <option value="1">القاهرة</option>
+                        <option value="2">شرم الشيخ</option>
+                      </select>
+                      <i class="fas fa-chevron-down"></i> 
+                    </div>
+                  </div>
+                </div>
+                <!-- السعر -->
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="mb-2">السعر</label>
+                    <div class="select-wrapper">
+                      <select class="form-select rounded-pill py-3">
+                        <option selected>50 ج.م</option>
+                        <option value="1">100 ج.م</option>
+                        <option value="2">150 ج.م</option>
+                      </select>                    
+                      <i class="fas fa-chevron-down"></i> 
+                    </div>
+                  </div>
+                </div>
+                <!-- زر لبحث -->
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="mb-2"></label>
+                    <div class="text-start ">
+                      <button class="rounded-pill px-4 main-btn py-3"> البحث <i
+                          class="fa-solid fa-arrow-left p-1"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="explore-section bg-img">
+    <div class="container">
+      <div class="row">
+        <div class="content text-white text-center">
+          <h2 class="fw-bold">استكشف الوجهات</h2>
+          <p class="fs-5">استمتع باستكشاف الرحلات الممتعة معنا</p>
+        </div>
+      </div>
+      <div class="my-5">
+        <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-indicators px-5">
+            <button type="button" onclick="handleButtonClick(0)" class="indicator-btn active"></button>
+            <button type="button" onclick="handleButtonClick(1)" class="indicator-btn"></button>
+            <button type="button" onclick="handleButtonClick(2)" class="indicator-btn"></button>
+            <button type="button" onclick="handleButtonClick(3)" class="indicator-btn"></button>
+            <button type="button" onclick="handleButtonClick(4)" class="indicator-btn"></button>
+          </div>
+          <!-- Slides -->
+          <div class="carousel-inner pb-5">
+            <div class="carousel-item active mt-3">
+              <div class="row justify-content-evenly">
+                <div class="col-md-2 mx-2">
+                  <div class="destination-card" id="card-0">
+                    <div class="img-card">
+                      <img src="./img/card1.png" alt="محافظة ظفار">
+                    </div>
+                    <p class="mt-4 text-center fw-bold">محافظة ظفار</p>
+                  </div>
+                </div>
+                <div class="col-md-2 mx-2">
+                  <div class="destination-card" id="card-1">
+                    <div class="img-card">
+                      <img src="./img/card2.png" alt="ولاية العامرات">
+                    </div>
+                    <p class="mt-4 text-center fw-bold">ولاية العامرات</p>
+                  </div>
+                </div>
+                <div class="col-md-2 mx-2">
+                  <div class="destination-card" id="card-2">
+                    <div class="img-card">
+                      <img src="./img/card3.png" alt="ولاية مسقط">
+                    </div>
+                    <p class="mt-4 text-center fw-bold">ولاية مسقط</p>
+                  </div>
+                </div>
+                <div class="col-md-2 mx-2">
+                  <div class="destination-card" id="card-3">
+                    <div class="img-card">
+                      <img src="./img/card4.png" alt="ولاية صلالة">
+                    </div>
+                    <p class="mt-4 text-center fw-bold">ولاية صلالة</p>
+                  </div>
+                </div>
+                <div class="col-md-2 mx-2">
+                  <div class="destination-card" id="card-4">
+                    <div class="img-card">
+                      <img src="./img/card5.png" alt="ولاية بوشر">
+                    </div>
+                    <p class="mt-4 text-center fw-bold">ولاية بوشر</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-explore container">
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="container">
+      <div class="row row-service">
+        <div class="col-6">
+          <div class="d-flex images position-relative">
+            <div class="img-abs" >
+              <img src="./img/Rectangle .png" alt="">
+            </div>
+            <div class="img-rel position-absolute justify-content-start  d-flex ">
+              <img src="./img/Rectangle -2.png" alt="" class="rounded-pill">
+            </div>
+          </div>
+        </div>
+        <div class="col-6 service-title">
+          <h2>الخدمات</h2>
+          <p>توفر شركة round in Oman العديد من الخدمات</p>
+          <p>المتنوعة والمميزة استكشافها واستمتع معنا</p>
+          <div class="service-cards">
+            <div class="row service-card d-flex mb-3" data-aos="fade-left">
+              <div class="circle col-3 rounded-circle">
+                <img src="./img/plam.png" alt="">
+              </div>
+              <div class="col-9 service-content">
+                <h5>خدمات الرحلات</h5>
+                <p>فرصة رائعة لاكتشاف أماكن جديدة وتجربة مغامرات مميزة </p>
+              </div>
+            </div>
+            <div class="row service-card d-flex mb-3">
+              <div class="circle2 col-3 rounded-circle">
+                <img src="./img/car.png" alt="">
+              </div>
+              <div class="col-9 service-content">
+                <h5>خدمات التنقل</h5>
+                <p>يمكنك حجز تاكسي أو تأجير سيارة حسب طلبك لإكمال راحتك معنا</p>
+              </div>
+            </div>
+            <div class="row service-card d-flex mb-3" data-aos="fade-left">
+              <div class="circle3 col-3 rounded-circle">
+                <img src="./img/camping.png" alt="">
+              </div>
+              <div class="col-9 service-content">
+                <h5>خدمات الترفيهية</h5>
+                <p> وسيلة رائعة لإضافة المتعة والتنوع إلى رحلتك. اختيار الأنشطة الترفيهية التي تناسب اهتماماتهم</p>
+              </div>
+            </div>
+            <div class="row service-card d-flex mb-3">
+              <div class="circle4 col-3 rounded-circle">
+                <img src="./img/hotel.png" alt="">
+              </div>
+              <div class="col-9 service-content">
+                <h5>خدمة حجز الفنادق</h5>
+                <p>خدمة حجز الفندق هي طريقة مريحة وسهلة لضمان مكان إقامة مناسب أثناء الرحلات</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trips-section">
+    <div class="color-div">
+      <div class="container">
+        <div class="col-4 text-start w-100 mt-5">
+          <button class="rounded-pill py-2 px-3 main-btn">إستكشف <i class="fa-solid fa-arrow-left p-1"></i></button>
+        </div>
+        <div class="row mt-3">
+          <div class="col-3 trips-contenttrips-content">
+            <h2 class="fw-bold">الرحلات السياحية</h2>
+            <p class="fs-5">استمتع باستكشاف رحلتك السياحية المميزة</p>
+          </div>
+          <div class="col-9 position-relative">
+            <button class="scroll-btn left-scroll" onclick="handleScrollLeft()">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="scroll-btn right-scroll" onclick="handleScrollRight()">
+              <i class="fa-solid fa-arrow-right"></i>            
+            </button>
+            <div class="scroll-cards position-absolute">
+              <div class="trip-card position-relative">
+                <img src="./img/Rectangle -2.png" alt="رحلة 1">
+                <div class="overlay1">
+                  <span class="vertical-label">الرحلة الاقتصادية</span>
+                  <div class="card-overlay">
+                    <h3 class="trip-title fw-bold">الرحلة الاقتصادية</h3>
+                    <div class="trip-details">
+                      <span class="trip-price ms-5"><i class="fa-solid fa-tag ms-2"></i>50 ر.ع</span>
+                      <button class="trip-more rounded-pill">المزيد<i class="fa-solid fa-arrow-left me-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trip-card position-relative">
+                <img src="./img/travel2.png" alt="رحلة 2">
+                <div class="overlay1">
+                  <span class="vertical-label">الرحلة العائلية</span>
+                  <div class="card-overlay">
+                    <h3 class="trip-title fw-bold ">الرحلة العائلية3</h3>
+                    <div class="trip-details">
+                      <span class="trip-price ms-4"><i class="fa-solid fa-tag ms-2"></i>50 ر.ع</span>
+                      <button class="trip-more rounded-pill">المزيد<i class="fa-solid fa-arrow-left me-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trip-card position-relative">
+                <img src="./img/travel3.png" alt="رحلة 3">
+                <div class="overlay1">
+                  <span class="vertical-label">الرحلة العائلية2</span>
+                  <div class="card-overlay">
+                    <h3 class="trip-title fw-bold">الرحلة العائلية2</h3>
+                    <div class="trip-details">
+                      <span class="trip-price ms-4"><i class="fa-solid fa-tag ms-2"></i>50 ر.ع</span>
+                      <button class="trip-more rounded-pill">المزيد<i class="fa-solid fa-arrow-left me-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trip-card position-relative">
+                <img src="./img/travel4.png" alt="رحلة 4">
+                <div class="overlay1">
+                  <span class="vertical-label">الرحلة الاقتصادية</span>
+                  <div class="card-overlay">
+                    <h3 class="trip-title fw-bold">الرحلة الاقتصادية</h3>
+                    <div class="trip-details">
+                      <span class="trip-price ms-4"><i class="fa-solid fa-tag ms-2"></i>50 ر.ع</span>
+                      <button class="trip-more rounded-pill">المزيد<i class="fa-solid fa-arrow-left me-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trip-card position-relative">
+                <img src="./img/travel1.png" alt="رحلة 1">
+                <div class="overlay1">
+                  <span class="vertical-label">الرحلة الاقتصادية</span>
+                  <div class="card-overlay">
+                    <h3 class="trip-title fw-bold">الرحلة الاقتصادية</h3>
+                    <div class="trip-details">
+                      <span class="trip-price ms-5"><i class="fa-solid fa-tag ms-2"></i>50 ر.ع</span>
+                      <button class="trip-more rounded-pill">المزيد<i class="fa-solid fa-arrow-left me-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-div">
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container br-sec">
+      <div class="row d-flex justify-content-between">
+        <div class="col-4">
+          <img src="./img/logo.png" alt="">
+          <p class="text-white my-4">موقع هـو منصة إلـكترونية تـهدف إلـى تقديم مـجموعة متنوعة مـن الخيارات للـسياح
+            والمقيمين
+            لاستكشاف الجمال
+            والتاريخ</p>
+          <div class=" d-flex  contact-footer">
+            <i class="fa-solid fa-x text-white border p-2 rounded-circle"></i>
+            <i class="fa-brands fa-instagram text-white border p-2 rounded-circle me-1"></i>
+            <i class="fa-brands fa-tiktok text-white border p-2 rounded-circle me-1"></i>
+            <i class="fa-brands fa-snapchat text-white border p-2 rounded-circle me-1"></i>
+          </div>
+        </div>
+        <div class="col-5 d-flex justify-content-end">
+          <div class="pages-container">
+            <h6 class="pages-title text-white fw-bold mb-4">الصفحات</h6>
+            <div class="pages-grid d-flex">
+              <ul class="pages-column">
+                <li><a href="#"> <i class="fa-solid fa-chevron-left ms-2 mb-4"></i>خدماتنا</a></li>
+                <li><a href="#"> <i class="fa-solid fa-chevron-left ms-2 mb-4"></i>عن الشركة</a></li>
+                <li><a href="#"> <i class="fa-solid fa-chevron-left ms-2 mb-4"></i>الوجهات السياحية</a></li>
+                <li><a href="#"> <i class="fa-solid fa-chevron-left ms-2 mb-4"></i>المدونة</a></li>
+                <li><a href="#"> <i class="fa-solid fa-chevron-left ms-2 "></i>ألبوم الصور</a></li>
+              </ul>
+              <ul class="pages-column">
+                <li><a href="#"> <i class="fa-solid fa-chevron-left ms-2 mb-4"></i>الأحكام والشروط</a></li>
+                <li><a href="#"> <i class="fa-solid fa-chevron-left ms-2 mb-4"></i>سياسات الخصوصية</a></li>
+                <li><a href="#"> <i class="fa-solid fa-chevron-left ms-2 mb-4"></i>الأسئلة الشائعة</a></li>
+                <li><a href="#"> <i class="fa-solid fa-chevron-left ms-2"></i>تواصل معنا</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 justify-content-end d-flex">
+          <div class="contact-container">
+            <h6 class="contact-title text-white fw-bold mb-4">بيانات التواصل</h6>
+            <div class="contact-item d-flex mb-3">
+              <div class="contact-icon ms-2 ">
+                <i class="fa-solid fa-phone p-3 rounded-circle"></i>
+              </div>
+              <span class="contact-text">+2 1235 1235 123</span>
+            </div>
+            <div class="contact-item d-flex mb-3">
+              <div class="contact-icon ms-2">
+                <i class="fa-solid fa-envelope p-3 rounded-circle"></i>
+              </div>
+              <span class="contact-text">Info@mail.com</span>
+            </div>
+            <div class="contact-item d-flex mb-3">
+              <div class="contact-icon ms-3">
+                <i class="fa-solid fa-location-dot p-3 rounded-circle location-icon"></i>
+              </div>
+              <span class="contact-text">Egypt - Cairo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex container justify-content-between">
+      <p class="text-white">جميع الحقوق محفوظة Round 2024</p>
+      <p class="text-white">صنع بـــ<i class="fa-solid fa-heart ms-1"></i>بواسطة apex</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
